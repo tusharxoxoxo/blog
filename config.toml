@@ -121,7 +121,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "cv"
-    url = "https://jduchniewicz.com/cv.pdf"
+    url = "https://github.com/tusharxoxoxo/blog/blob/trunk/hidden/resume.pdf"
 
 [languages]
   [languages.en.params]

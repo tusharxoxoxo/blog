@@ -45,6 +45,6 @@ Please feel free to reach out to me, or leave a comment, I am always eager to ha
 ---
 [Posts]: https://tusharxoxoxo.github.io/posts/
 [links]: http://i0.kym-cdn.com/photos/images/facebook/001/137/217/88b.png
-[CV]: https://jduchniewicz.com/cv.pdf
+[CV]: https://github.com/tusharxoxoxo/blog/blob/trunk/hidden/resume.pdf
 [LinkedIn]: https://www.linkedin.com/in/dahiya-tushar/
 [GitHub]: https://github.com/tusharxoxoxo
