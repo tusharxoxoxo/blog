@@ -1,0 +1,14 @@
+{{- with .Site.Params.favicon.color }}
+    {{ $apple_touch_icon := printf "apple-touch-icon-%s.png" $.Site.Params.defaultTheme}}
+    {{ $favicon_32 := printf "favicon-32x32-%s.png" $.Site.Params.defaultTheme}}
+    {{ $favicon_16 := printf "favicon-16x16-%s.png" $.Site.Params.defaultTheme}}
+    {{ $safari_pinned_tab := printf "safari-pinned-tab-%s.png" $.Site.Params.defaultTheme}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ $apple_touch_icon | relURL}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon_32 | relURL}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon_16 | relURL}}">
+    <link rel="manifest" href="{{ cond (eq $.Site.Params.defaultTheme "dark") ("site-dark.webmanifest" | relURL) ("site-light.webmanifest" | relURL)}}">
+    <link rel="mask-icon" href="{{ $safari_pinned_tab | relURL}}" color="{{ cond (eq $.Site.Params.defaultTheme "dark") .maskDark .maskLight }}">
+    <link id="dynamic-favicon" rel="shortcut icon" href="{{ "favicon-dark.ico" | relURL}}">
+    <meta name="msapplication-TileColor" content="{{ cond (eq $.Site.Params.defaultTheme "dark") .msapplicationDark .msapplicationLight }}">
+    <meta name="theme-color" content="{{ cond (eq $.Site.Params.defaultTheme "dark") .themeDark .themeLight }}">
+{{ end }}

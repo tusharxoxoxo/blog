@@ -1,0 +1,33 @@
+.scrollToTopBtn {
+    background-color: $light-background-secondary;
+    border-radius: 35px;
+    color: $dark-background-secondary;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+  
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+
+    .dark-theme & {
+      background-color: $dark-background-secondary;
+      color: $light-background-secondary;
+    }
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }

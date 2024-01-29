@@ -1,0 +1,22 @@
+{{ $main := resources.Get "js/main.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $prism := resources.Get "js/prism.js" }}
+{{ $theme := resources.Get "js/theme.js" }}
+{{ $navbar := resources.Get "js/scroll_navbar.js" }}
+{{ $progress := resources.Get "js/progress.js" }}
+{{ $toc := resources.Get "js/toc.js" }}
+{{ $mobile_scroll := resources.Get "js/mobile_scroll_top.js" }}
+{{ $background:= resources.Get "js/background.js" }}
+{{ $landing := resources.Get "js/landing.js" }}
+{{ $secureJS := slice $main $menu $prism $theme $navbar $progress $toc $mobile_scroll $background $landing | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+
+{{- if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics.html" . }}
+{{- end}}
+
+{{ range $val := $.Site.Params.customJS }}
+    {{ if gt (len $val) 0 }}
+        <script src="{{ $val }}"></script>
+    {{ end }}
+{{ end }}
