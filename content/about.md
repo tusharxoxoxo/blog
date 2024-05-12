@@ -10,16 +10,14 @@ date = "2020-04-30"
 
 My name is **Tushar Dahiya** and this is my personal space :) \
 I am currently a final year undergrad at The National Institute of Engineering, Mysore with major in Information Science Engineering.
-I am currently working as a programmer at **[Tietoevry]** doing 5G NR L1 development from the Modem UE side on a custom ASIC for an **Unspecified Client**. Also, I am a co-founder of **[Sticky Piston Studios]** - a jack-of-all-trades company where **we make any advanced tech tick**!
 
-My skills include low-level programming in **C**, **C++** and **Rust**. Being proficient in hardware accelerators, such as **FPGA**s I happen to know some **VHDL** and **SystemVerilog**. Lastly, being a hardcore **gamejammer** I am familiar with the **Unity** engine and other popular tools of the trade.
-In my free time I am doing a ton of **bouldering**, learning **hardware hacking**, some **reverse engineering** and taking care of my cute humongous German Shepherd **Bruno**
+My skills include low-level programming in **C**, **C++** and **Rust**. 
 
-I have recently graduated with an MSc in **Embedded Systems** at **KTH Royal Institute of Technology**, Sweden and **University of Turku**, Finland as a part of EIT Digital Programme. Thesis titled: *"FPGA accelerated tcpdump using eBPF"* goes into the topic of hardware acceleration of packet capturing in embedded Linux system using an FPGA. It was a cooperative effort between KTH and [Tietoevry].
+In my free time I am doing a ton of **bouldering**, learning **hardware hacking**, some **reverse engineering** and taking care of my cute humongous Mango tree **Sindhura**
 
-I have also graduated from **Warsaw University of Technology** with the highest degree for my thesis: *"FPGA based hardware accelerator for musical synthesis for Linux system"*.
+Over the weekends - I contribute to open source, and write blogs (where you are right now:). But that’s not it, I like sports (participated in swimming Nationals three times, best position was 4th in 200m backstroke in 2018:), and discussing technology (mostly Linux, nvim, and programming) & ,,,,,,
 
-You can see both theses under the *Achievements* section below.
+I love writing impactful codes! My work doesn’t stop at getting the accuracy. I love optimizing the models to help deploy in real-time.
 
 **Social [links] 🗡️:** \
  - [CV] \
